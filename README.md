@@ -108,4 +108,82 @@ List of discovered devices
 
 ### 2.1. Button
 
+#### 2.1.1. Attributes
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Type</th>
+    <th>Description</th>
+    <th></th>
+  </tr>
+  <tr>
+    <td>pressed</td>
+    <td>boolean</td>
+    <td>Determines whether button is pressed</td>
+    <td>Read only</td>
+  </tr>
+</table>
+
 ### 2.2. Light
+
+#### 2.1.1. Attributes
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Type</th>
+    <th>Description</th>
+    <th></th>
+  </tr>
+  <tr>
+    <td>power</td>
+    <td>boolean</td>
+    <td>Determines whether light is powered on</td>
+    <td>R/W</td>
+  </tr>
+  <tr>
+    <td>br</td>
+    <td>uint8</td>
+    <td>Brightness</td>
+    <td>R/W</td>
+  </tr>
+  <tr>
+    <td>hue</td>
+    <td>uint8</td>
+    <td>Brightness</td>
+    <td>R/W</td>
+  </tr>
+  <tr>
+    <td>sat</td>
+    <td>uint8</td>
+    <td>Brightness</td>
+    <td>R/W</td>
+  </tr>
+  <tr>
+    <td>effect</td>
+    <td>string</td>
+    <td>
+      * fade - linear fade to the new state
+      * fall - accelerating fade to the new state
+      * dive - decelerating fade to the new state
+      * loop   - linear fade to the new state and back
+      * bounce - fall to the new color and back
+      * swing  - dive to the new color and back
+    </td>
+    <td>R/W</td>
+  </tr>
+  <tr>
+    <td>time</td>
+    <td>uint16</td>
+    <td>Effect transition time in ms</td>
+    <td>R/W</td>
+  </tr>
+  <tr>
+    <td>repeat</td>
+    <td>boolean</td>
+    <td>Effect repeat</td>
+    <td>R/W</td>
+  </tr>
+</table>
+
