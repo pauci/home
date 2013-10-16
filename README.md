@@ -164,12 +164,12 @@ List of discovered devices
     <td>effect</td>
     <td>string</td>
     <td>
-      * fade - linear fade to the new state
-      * fall - accelerating fade to the new state
-      * dive - decelerating fade to the new state
-      * loop   - linear fade to the new state and back
-      * bounce - fall to the new color and back
-      * swing  - dive to the new color and back
+* fade - linear fade to the new state
+* fall - accelerating fade to the new state
+* dive - decelerating fade to the new state
+* loop   - linear fade to the new state and back
+* bounce - fall to the new color and back
+* swing  - dive to the new color and back
     </td>
     <td>R/W</td>
   </tr>
