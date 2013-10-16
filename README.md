@@ -1,20 +1,19 @@
 Home
 ====
 
-Home API
+1. Home API
 --------
 
-## 1. Device discovery #
+## 1.1. Device discovery #
 
-### 1.1. Description #
+### 1.1.1. Description #
 
 
-### 1.2. Request #
+### 1.1.2. Request #
 ```
 /api/discover
 ```
 
-### 1.3. Request example #
 ```json
 {
 	"onlyNew": false,
@@ -24,11 +23,10 @@ Home API
 ```
 
 
-### 1.4. Response #
+### 1.1.3. Response #
 
-Contains list of discovered devices
+List of discovered devices
 
-### 1.5. Response example #
 ```json
 {
 	"inputs": [
@@ -80,6 +78,31 @@ Contains list of discovered devices
 }
 ```
 
-### 1.6. Device types
+## 1.2. Write to device
+
+/api/set/<addr>
+
+```json
+{
+    "power": true,
+    "bri": 150,
+    "hue": 0,
+    "sat": 255,
+    "effect": "fade",
+    "time": 1000
+}
+```
+
+## 1.3. Read from device
+
+/api/get/<addr>
+
+```json
+{
+    "power": false
+}
+```
+
+# 2. Device types #
 
 
