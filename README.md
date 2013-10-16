@@ -4,7 +4,7 @@ Home
 Home API
 --------
 
-## 1. Discover devices #
+## 1. Device discovery #
 
 ### 1.1. Description #
 
@@ -79,5 +79,7 @@ Contains list of discovered devices
 	]
 }
 ```
+
+### 1.6. Device types
 
 
