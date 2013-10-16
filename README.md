@@ -108,6 +108,10 @@ List of discovered devices
 
 ### 2.1. Button
 
+<table>
+  <tr><th>Type</th><td>button</td></tr>
+</table>
+
 #### 2.1.1. Attributes
 
 <table>
@@ -125,9 +129,36 @@ List of discovered devices
   </tr>
 </table>
 
-### 2.2. Light
+### 2.2. Motion sensor
 
-#### 2.1.1. Attributes
+<table>
+  <tr><th>Type</th><td>motion</td></tr>
+</table>
+
+#### 2.2.1. Attributes
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Type</th>
+    <th>Description</th>
+    <th></th>
+  </tr>
+  <tr>
+    <td>alarm</td>
+    <td>boolean</td>
+    <td>Motion detected</td>
+    <td>Read only</td>
+  </tr>
+</table>
+
+### 2.3. Light
+
+<table>
+  <tr><th>Type</th><td>light</td></tr>
+</table>
+
+#### 2.3.1. Attributes
 
 <table>
   <tr>
