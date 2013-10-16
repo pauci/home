@@ -12,66 +12,39 @@ Home
 /api/discover
 ```
 
+#### 1.1.3. Request example
+
 ```json
 {
-	"onlyNew": false,
-	"categories": ["inputs", "outputs"],
+	"new": false,
 	"types": ["button", "switch", "rotary", "motion", "temperature", "humidity", "light", "display"]
 }
 ```
 
-#### 1.1.3. Response
+#### 1.1.4. Response
 
-List of discovered devices
+Address indexed list of discovered devices.
+
+#### 1.1.5. Response example
 
 ```json
 {
-	"inputs": [
-		{
-			"addr": 101,
-			"type": "button"
-		},
-		{
-			"addr": 102,
-			"type": "switch"
-		},
-		{
-			"addr": 103,
-			"type": "rotary",
-			"range": 255
-		},
-		{
-			"addr": 104,
-			"type": "motion"
-		},
-		{
-			"addr": 105,
-			"type": "temperature"
-		},
-		{
-			"addr": 106,
-			"type": "humidity"
-		}
-	],
-	"outputs": [
-		{
-			"addr": 201,
-			"type": "light",
-			"dimmable": true,
-			"chromatic": true
-		},
-		{
-			"addr": 202,
-			"type": "light",
-			"count": 500,
-			"dimmable": true,
-			"chromatic": true
-		},
-		{
-			"addr": 203,
-			"type": "display"
-		}
-	]
+	101: {
+		"type": "switch"
+	},
+	120: {
+		"type": "motion"
+	},
+	201: {
+		"type": "light",
+		"dimmable": true,
+		"chromatic": false
+	},
+	202: {
+		"type": "light",
+		"dimmable": true,
+		"chromatic": true
+	}
 }
 ```
 
@@ -108,11 +81,15 @@ List of discovered devices
 
 ### 2.1. Button
 
-<table>
-  <tr><th>Type</th><td>button</td></tr>
-</table>
+#### 2.1.1. Description
 
-#### 2.1.1. Attributes
+```json
+{
+    "type": "button"
+}
+```
+
+#### 2.1.2. Attributes
 
 <table>
   <tr>
@@ -122,20 +99,51 @@ List of discovered devices
     <th></th>
   </tr>
   <tr>
-    <td>pressed</td>
+    <td>value</td>
     <td>boolean</td>
     <td>Determines whether button is pressed</td>
     <td>Read only</td>
   </tr>
 </table>
 
-### 2.2. Motion sensor
+### 2.3. Switch
+
+#### 2.3.1. Description
+
+```json
+{
+    "type": "switch"
+}
+```
+
+#### 2.3.2. Attributes
 
 <table>
-  <tr><th>Type</th><td>motion</td></tr>
+  <tr>
+    <th>Name</th>
+    <th>Type</th>
+    <th>Description</th>
+    <th></th>
+  </tr>
+  <tr>
+    <td>value</td>
+    <td>boolean</td>
+    <td>Determines whether switch is in on or off position</td>
+    <td>Read only</td>
+  </tr>
 </table>
 
-#### 2.2.1. Attributes
+### 2.2. Motion sensor
+
+#### 2.2.1. Description
+
+```json
+{
+    "type": "motion"
+}
+```
+
+#### 2.2.2. Attributes
 
 <table>
   <tr>
@@ -152,13 +160,19 @@ List of discovered devices
   </tr>
 </table>
 
-### 2.3. Light
+### 2.4. Light
 
-<table>
-  <tr><th>Type</th><td>light</td></tr>
-</table>
+#### 2.4.1. Description
 
-#### 2.3.1. Attributes
+```json
+{
+    "type": "light",
+    "dimmable": true,
+    "chromatic": true
+}
+```
+
+#### 2.4.2. Attributes
 
 <table>
   <tr>
