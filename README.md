@@ -29,18 +29,18 @@ Address indexed list of discovered devices.
 
 ```json
 {
-	101: {
+	"101": {
 		"type": "switch"
 	},
-	120: {
+	"120": {
 		"type": "motion"
 	},
-	201: {
+	"201": {
 		"type": "light",
 		"dimmable": true,
 		"chromatic": false
 	},
-	202: {
+	"202": {
 		"type": "light",
 		"dimmable": true,
 		"chromatic": true
