@@ -1,15 +1,13 @@
 Home
 ====
 
-1. Home API
---------
+## 1. Home API
 
-## 1.1. Device discovery #
+### 1.1. Device discovery
 
-### 1.1.1. Description #
+#### 1.1.1. Description
 
-
-### 1.1.2. Request #
+#### 1.1.2. Request
 ```
 /api/discover
 ```
@@ -22,8 +20,7 @@ Home
 }
 ```
 
-
-### 1.1.3. Response #
+#### 1.1.3. Response
 
 List of discovered devices
 
@@ -78,7 +75,7 @@ List of discovered devices
 }
 ```
 
-## 1.2. Write to device
+### 1.2. Write to device
 
 /api/set/<addr>
 
@@ -93,7 +90,7 @@ List of discovered devices
 }
 ```
 
-## 1.3. Read from device
+### 1.3. Read from device
 
 /api/get/<addr>
 
@@ -103,6 +100,8 @@ List of discovered devices
 }
 ```
 
-# 2. Device types #
+## 2. Device types
 
+### 2.1. Button
 
+### 2.2. Light
