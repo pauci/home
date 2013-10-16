@@ -75,9 +75,23 @@ List of discovered devices
 }
 ```
 
-### 1.2. Write to device
+### 1.2. Read from device
 
+```
+/api/get/<addr>
+```
+
+```json
+{
+    "power": false
+}
+```
+
+### 1.3. Write to device
+
+```
 /api/set/<addr>
+```
 
 ```json
 {
@@ -87,16 +101,6 @@ List of discovered devices
     "sat": 255,
     "effect": "fade",
     "time": 1000
-}
-```
-
-### 1.3. Read from device
-
-/api/get/<addr>
-
-```json
-{
-    "power": false
 }
 ```
 
