@@ -6,15 +6,15 @@ Home API
 
 ## 1. Discover devices #
 
-### 1.1 Description #
+### 1.1. Description #
 
 
-### 1.2 Request #
+### 1.2. Request #
 ```
 /api/discover
 ```
 
-### 1.3 Request example #
+### 1.3. Request example #
 ```json
 {
 	"onlyNew": false,
@@ -24,11 +24,11 @@ Home API
 ```
 
 
-### 1.4 Response #
+### 1.4. Response #
 
 Contains list of discovered devices
 
-### 1.5 Response example #
+### 1.5. Response example #
 ```json
 {
 	"inputs": [
