@@ -160,9 +160,36 @@ Address indexed list of discovered devices.
   </tr>
 </table>
 
-### 2.4. Light
+### 2.4. Relay
 
 #### 2.4.1. Description
+
+```json
+{
+    "type": "relay"
+}
+```
+
+#### 2.4.1. Attributes
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Type</th>
+    <th>Description</th>
+    <th></th>
+  </tr>
+  <tr>
+    <td>state</td>
+    <td>boolean</td>
+    <td>Relay state</td>
+    <td>R/W</td>
+  </tr>
+</table>
+
+### 2.5. Light
+
+#### 2.5.1. Description
 
 ```json
 {
@@ -172,7 +199,7 @@ Address indexed list of discovered devices.
 }
 ```
 
-#### 2.4.2. Attributes
+#### 2.5.2. Attributes
 
 <table>
   <tr>
