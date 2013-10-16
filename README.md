@@ -151,13 +151,13 @@ List of discovered devices
   <tr>
     <td>hue</td>
     <td>uint8</td>
-    <td>Brightness</td>
+    <td>Hue</td>
     <td>R/W</td>
   </tr>
   <tr>
     <td>sat</td>
     <td>uint8</td>
-    <td>Brightness</td>
+    <td>Saturation</td>
     <td>R/W</td>
   </tr>
   <tr>
