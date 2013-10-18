@@ -195,9 +195,12 @@ Address indexed list of discovered devices.
 {
     "type": "light",
     "dimmable": true,
-    "chromatic": true
+    "chromatic": true,
+    "count": 1
 }
 ```
+
+Count is a number of independetly controllable light segments. (e.g. the number of leds in addressable led strip)
 
 #### 2.5.2. Attributes
 
