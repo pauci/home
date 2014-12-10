@@ -16,8 +16,17 @@ Home
 
 ```json
 {
-	"new": false,
-	"types": ["button", "switch", "rotary", "motion", "temperature", "humidity", "light", "display"]
+    "new": false,
+    "types": [
+        "button",
+        "switch",
+        "rotary",
+        "motion",
+        "temperature",
+        "humidity",
+        "light",
+        "display"
+    ]
 }
 ```
 
