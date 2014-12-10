@@ -21,8 +21,8 @@ GET /devices/{addr}
     	    "values": {
     	        "h": "humidity [%]",
     	        "t": "temperature [C]"
-	        },
-	        "status": "ready"
+	    },
+	    "status": "ready"
     	},
     	{
     	    "id": "bmp1",
@@ -46,8 +46,8 @@ GET /devices/{addr}/sensors/{id}
 {
     "status": "OK",
     "values": {
-        "h": 55.4,
-        "t": 21.2
+        "h": "55.4%",
+        "t": "21.2C"
     }
 }
 ```
