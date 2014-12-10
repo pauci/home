@@ -13,17 +13,26 @@ GET /devices/{addr}
 
 ```json
 {
-    "addr": 0x1234ab,
+    "addr": "1a2b3c4d5e",
     "sensors": [
     	{
-    	    "id": "t",
-    	    "type": "temperature",
-    	    "unit": "C"
+    	    "id": "1",
+    	    "type": "DHT22",
+    	    "values": {
+    	        "h": "humidity [%]",
+    	        "t": "temperature [C]"
+	        },
+	        "status": "ready"
     	},
     	{
-    	    "id": "h",
-    	    "type": "humidity",
-    	    "unit": "%"
+    	    "id": "bmp1",
+    	    "type": "BMP180",
+    	    "values": {
+    	       "p": "barometric pressure [hPa]",
+    	       "t": "temperature [C]",
+    	       "a": "altitude [m]"
+    	    },
+    	    "status": "disconnected"
     	}
     ]
 }
@@ -35,7 +44,10 @@ GET /devices/{addr}/sensors/{id}
 
 ```json
 {
-    "value": 19.5,
-    "unit": "C"
+    "status": "OK",
+    "values": {
+        "h": 55.4,
+        "t": 21.2
+    }
 }
 ```
